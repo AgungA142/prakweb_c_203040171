@@ -33,6 +33,8 @@ $Buku = query("SELECT * FROM buku");
 
     <body>
 
+    <h1 class="center">Daftar Buku Tutorial bertahan hidup di era revolusi industri 4.0</h1>
+
 
    
     <div class="container">
