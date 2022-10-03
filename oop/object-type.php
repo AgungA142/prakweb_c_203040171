@@ -27,6 +27,7 @@ class produk {
 class infoProduk {
     public function cetak(Produk $produk) {
         $str = "{$produk -> judul} | {$produk -> getLabels()}  (Rp . {$produk -> harga}) | ";
+        return $str;
     }
 }
 
@@ -39,8 +40,9 @@ $produk5 = new produk("dragonball");
 echo "komik : " . $produk3->getLabels();
 echo "<br>";
 echo "game : " . $produk4->getLabels();
+echo "<br>";
 $infoProduk1 = new infoProduk();
-echo $infoProduk1 -> cetak($produk3);
+echo $infoProduk1-> cetak($produk3);
 
 
 
