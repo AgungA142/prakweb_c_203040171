@@ -11,6 +11,8 @@ class produk {
 
 
 
+
+
     public function getLabels() {
         return "$this->penulis, $this->penerbit," ;
     }
