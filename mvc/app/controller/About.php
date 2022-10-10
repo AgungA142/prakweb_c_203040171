@@ -5,7 +5,7 @@ class About extends Controller{
         $data['judul'] = 'halaman page';
         $this-> view('templates/header', $data);
         $this->view('about/page');
-        $this-> view('templates/footer', $data);
+        $this-> view('templates/footer',);
     }
 
     public function index($nama = 'agung', $pekerjaan ='mahasiswa', $umur = '32') {
@@ -16,7 +16,7 @@ class About extends Controller{
       
         $this-> view('templates/header', $data);
         $this->view('about/index', $data);
-        $this-> view('templates/footer', $data);
+        $this-> view('templates/footer', );
     }
 }
 
