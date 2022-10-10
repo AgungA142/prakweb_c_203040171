@@ -1,7 +1,6 @@
 <?php
 
-class produk
-{
+class produk {
   public $judul,
     $penulis,
     $penerbit;
@@ -39,8 +38,7 @@ class produk
 }
 
 
-class komik extends produk
-{
+class komik extends produk {
   public $jmlhHalaman;
 
   public function __construct($judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0, $jmlhHalaman = 0)
@@ -58,8 +56,7 @@ class komik extends produk
   }
 }
 
-class game extends produk
-{
+class game extends produk {
   public $waktumain;
   public function __construct($judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0, $waktumain = 0)
   {
@@ -81,8 +78,7 @@ class game extends produk
 }
 
 
-class CetakInfoProduk
-{
+class CetakInfoProduk {
   public function cetak(Produk $produk)
   {
     $str = "{$produk->judul} | {$produk->getLabel()} (Rp. {$produk->harga})";
