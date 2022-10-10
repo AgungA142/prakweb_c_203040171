@@ -8,7 +8,7 @@ class About extends Controller{
         $this-> view('templates/footer',);
     }
 
-    public function index($nama = 'agung', $pekerjaan ='mahasiswa', $umur = '32') {
+    public function index($nama = 'agung', $pekerjaan ='mahasiswa', $umur = '20') {
         $data['nama'] = $nama;
         $data['pekerjaan'] = $pekerjaan;
         $data['umur'] = $umur;
